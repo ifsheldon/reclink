@@ -9,8 +9,8 @@ Suppose we have a directory of the below structure:
     - c.txt
     - d.md
     - e
-      f.md
-      g.txt
+      - f.md
+      - g.txt
 ```
 Then if we want to recursively hard-link files in `a/b` in `a/bbb`, we can use `reclink a/b a/bbb`, then `a/bbb` will be created automatically, containing hardlinks to all files in `a/b`.
 
